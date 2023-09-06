@@ -411,7 +411,8 @@ class iPaymu
                 'buyerPhone' => $this->buyer['phone'] ?? null,
                 'referenceId' => $this->referenceId ?? null,
                 'expired' => $this->expired ?? 24,
-                'expiredType' => $this->expiredType ?? 'hours'
+                'expiredType' => $this->expiredType ?? 'hours',
+                'feeDirection' => $paymentData['feeDirection'] ?? 'MERCHANT'
             ],
             [
                 'va' => $this->va,
